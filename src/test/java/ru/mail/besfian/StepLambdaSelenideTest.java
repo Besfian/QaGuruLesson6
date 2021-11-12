@@ -29,7 +29,7 @@ public class StepLambdaSelenideTest {
             $(byText(dataBase.lesson)).click();
         });
         step("Opening the Issues", () -> {
-            $(partialLinkText(dataBase.issues)).click();
+            $(partialLinkText(dataBase.menuIssues)).click();
         });
         step("We check that Issues Test visible", () -> {
             $(byText(dataBase.issues)).shouldBe(Condition.visible);
